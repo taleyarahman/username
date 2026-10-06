@@ -3,6 +3,7 @@ monday = {"Ravi", "Sneha", "Arjun", "Divya", "Kiran"}
 tuesday = {"Sneha", "Arjun", "Meera", "Divya"}
 
 present_on_bothdays = monday.intersection(tuesday)
+# print(monday.intersection(tuesday))
 print("students present on both days:", present_on_bothdays)
 
 present_only_on_monday = monday.difference(tuesday)
