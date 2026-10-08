@@ -11,6 +11,15 @@ else:
 # for i in range(5,51,5):
 #     print(i)
 
-n = 5
-for i in range(1,11):
-    print(n*i)
+# n = 5
+# for i in range(1,11):
+#     print(n*i)
+
+n = int(input("enter a number : "))
+sum = 0
+i =1
+while i<=n:
+    sum +=i
+    i +=1
+
+print("total sum is : ")
