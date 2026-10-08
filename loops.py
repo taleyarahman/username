@@ -8,33 +8,50 @@
 # else:
 #     print("eat")
 
-# for i in range(5,51,5):
-#     print(i)
 
-# n = 5
-# for i in range(1,11):
-#     print(n*i)
+#PASSWORD RETRY 
+# real_pass= "python123"
 
-# n = int(input("enter a number : "))
-# sum = 0
-# i =1
-# while i<=n:
-#     sum+=i
-#     i+=1
+#WHILE LOOP
+# count =0
+# granted=False #switch is OFF
 
-# print("total sum is : ", sum)
+# while count<=2:
+#     password=input("enter the password : ")
+#     count+=1
 
-n = int(input("enter the number: "))
-fact=1
-i=1
-while i <=n:
-    fact*=i
-    i+=1
+#     if real_pass==password:
+#         print("Access granted")
+#         granted=True  #switch in ON
+#         break
+#     else:
+#         print(3-count ,"Attempts left")
 
-print("factorial of ",n , "is" ,fact)
+# if granted==False:
+#     print("Account locked. ")
 
-n = int(input("enter the number: "))
-fact=1
-for i in range(1,n+1):
-    fact*=i
-print("factorial = ", fact)
+# #FOR LOOP
+# for i in range(3):
+#     password=input("enter the password: ")
+#     if real_pass==password:
+#         print("access granted")
+#         break
+#     else:
+#         print(2-i,"attempts left")
+# else:
+#     print("Account locked")
+
+#Digit Sum
+num = int(input("enter a positive integer: "))  #4896
+total = 0
+count = 0
+
+while num > 0:
+    digit= num // 10 #489
+    total += num % 10 #6
+    count+=1
+    num = digit
+
+print("Sum of digits:", total)
+print("Digit count: ", count)
+
